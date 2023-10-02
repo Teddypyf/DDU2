@@ -7,14 +7,17 @@ import math
 def generateData(n):
     # generate a random data set in 3*n
     data = []
-
-    for i in range((n // 2)):
+    i = 0
+    while i < (n // 2):
         arr = [random.randint(0, 60), random.randint(0, 60), 1]
         data.append(arr)
+        i += 1
 
-    for i in range((n // 2)):
+    i = 0
+    while i < (n // 2):
         arr = [random.randint(40, 100), random.randint(40, 100), 0]
         data.append(arr)
+        i += 1
 
     data = np.asarray(data)
     return data
