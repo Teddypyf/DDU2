@@ -9,13 +9,13 @@ def generateData(n):
     data = []
     i = 0
     while i < (n // 2):
-        arr = [random.randint(0, 60), random.randint(0, 60), 1]
+        arr = [random.randint(0, 100), random.randint(0, 100), 1]
         data.append(arr)
         i += 1
 
     i = 0
     while i < (n // 2):
-        arr = [random.randint(40, 100), random.randint(40, 100), 0]
+        arr = [random.randint(0, 100), random.randint(0, 100), 0]
         data.append(arr)
         i += 1
 
