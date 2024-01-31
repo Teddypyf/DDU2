@@ -24,9 +24,9 @@ def distance(file_path, x, y, z):
     for row in range(array_length):
         row_distance = []
         print(dis_data[row, :-1])
-        distance = np.abs(dis_data[row, :-1] - np.array([x, y, z]))
+        distance = np.abs(dis_data[row, :-1]) - np.abs(np.array([1, 1, 1]))
         row_distance.append(distance)
-        row_distance.append(data[row, -1])
+        row_distance.append(dis_data[row, -1])
         dis_array.append([row_distance])
     return dis_array
 
